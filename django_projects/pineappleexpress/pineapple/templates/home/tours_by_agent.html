@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>My Tours</h1>
+    
+    {% if tourinstance_list %}
+    <ul>
+
+      {% for tourinst in tourinstance_list %}
+      <li class="tourname">
+        <a href="{% url 'my-tours'%}">{{tourinst.tour}} - {{tourinst.duration}} - {{tourinst.tour_date}} </a> ({{ tourinst.id }})
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+      <p>You have no tours to display.</p>
+    {% endif %}
+{% endblock %}

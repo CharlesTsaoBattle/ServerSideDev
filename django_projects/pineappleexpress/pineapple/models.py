@@ -11,6 +11,10 @@ class Product(models.Model):
     name = models.CharField(max_length=150, db_index=True)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     description = models.TextField(blank=True)
+    quantity = models.IntegerField(blank=True)
+    datelastorder = models.DateTimeField(blank=True)
+#    image = models.ImageField(blank=True)
+
 
     def __str__(self):
         return self.name

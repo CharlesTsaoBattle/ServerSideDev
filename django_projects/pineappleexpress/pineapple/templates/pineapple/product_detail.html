@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+  <h1><strong>{{product.name|capfirst}}</strong> - ${{product.price}}</h1>
+  <br><br>
+  <p><b>Description:</b> {{ product.description}} </p>
+  <br>
+</div>
+{% endblock %}

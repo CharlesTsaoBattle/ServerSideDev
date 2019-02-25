@@ -34,6 +34,7 @@
               <ul class="sidebar-nav">
                 <br><br><br>
                 <li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'products' %}">Browse Products</a></li>
 				<br>
                 {% if user.is_authenticated %}
 				  <li>User: {{ user.get_username }}</li>

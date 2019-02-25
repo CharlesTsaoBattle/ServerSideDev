@@ -3,10 +3,10 @@
 <h1>Home Page</h1>
 <p>You are on the home page of a very basic version 0.1 Pineapple Express website.</p>
 <div>
-  {% for tour in tours %}
-    <div class="tourname">
-      <a href="{% url 'tour_detail' tour.id %}">
-        <p><strong>{{ tour.name|capfirst }} </strong></p>
+  {% for product in products %}
+    <div class="productname">
+      <a href="{% url 'product_detail' product.id %}">
+        <p><strong>{{ product.name|capfirst }} </strong></p>
       </a>
    </div>
   {% endfor %}

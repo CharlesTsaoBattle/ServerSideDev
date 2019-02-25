@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1><strong>List of Products</strong></h1>
+    <br>
+    {% if product_list %}
+    <ul>
+
+      {% for product in product_list %}
+      <div class="productname">
+        <a href="{% url 'product_detail' product.id %}">
+          <p><strong>{{ product.name|capfirst}}</strong> - ${{ product.price}}</p>
+        </a>
+     </div>
+      {% endfor %}
+      <br>
+    </ul>
+    {% else %}
+      <p>There are no products to display.</p>
+    {% endif %}
+{% endblock %}

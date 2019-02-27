@@ -23,6 +23,9 @@ class Product(models.Model):
         return reverse('product_detail', args=[str(self.id)])
 
 
+
+#    CAN ALL THE BELOW BE REMOVED?
+
 # class ProductInstance(models.Model):
 #     """Model representing a specific instance of a product"""
 #     id = models.UUIDField(primary_key=True, default=uuid.uuid4)

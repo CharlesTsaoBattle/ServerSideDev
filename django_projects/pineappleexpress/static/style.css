@@ -250,7 +250,7 @@ blockquote cite {
 ====> 3.5 Others
 --------------------------------------------------------------*/
 body {
-	background: #f2f2f2; /* Fallback for when there is no custom background color defined. */
+	background: #97bf4d; /* Fallback for when there is no custom background color defined. */
 }
 strong {
 	font-weight: bold;
@@ -259,7 +259,7 @@ cite, em, i {
 	font-style: italic;
 }
 pre {
-	background-color: #f2f2f2;
+	background-color: #97bf4d;
 	margin-bottom: 20px;
 	overflow: auto;
 	padding: 20px;
@@ -1247,7 +1247,7 @@ body.wide {
 	padding-bottom: 0;
 }
 #page {
-	background-color: #ffffff;
+	background-color: #fffa96;
 	margin: 0 auto;
 	max-width: 1180px;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -1694,8 +1694,8 @@ li.comment {
 #colophon{
 	font-size: 14px;
 	clear: both;
-	color: #777;
-	background-color: #1f2021;
+	color: #000;
+	background-color: #008511;
 	overflow: hidden;
 	padding: 50px 0 20px;
 }

@@ -27,7 +27,7 @@ urlpatterns += [
     path('pineapple/', include('pineapple.urls')),
 ]
 
-#Add URL maps to redirect the base URL to our application
+# URL maps to redirect the base URL to our application
 from django.views.generic import RedirectView
 urlpatterns += [
     path('', RedirectView.as_view(url='/pineapple/', permanent=True)),

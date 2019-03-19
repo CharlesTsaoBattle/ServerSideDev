@@ -1,8 +1,6 @@
 from django.contrib import admin
 
 # Register your models here.
-from pineapple.models import Product#, ProductInstance, Customer
+from pineapple.models import Product
 
 admin.site.register(Product)
-# admin.site.register(ProductInstance)
-# admin.site.register(Customer)

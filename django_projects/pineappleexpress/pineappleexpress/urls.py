@@ -21,6 +21,10 @@ from django.conf.urls import url
 
 from pineapple import views
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
@@ -33,4 +37,4 @@ urlpatterns += [
 from django.views.generic import RedirectView
 urlpatterns += [
     path('', RedirectView.as_view(url='/pineapple/', permanent=True)),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

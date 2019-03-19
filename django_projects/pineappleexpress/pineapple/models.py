@@ -13,6 +13,7 @@ class Product(models.Model):
     description = models.TextField(blank=True)
     quantity = models.IntegerField(blank=True)
     datelastorder = models.DateTimeField(blank=True)
+    image = models.ImageField(upload_to='product_image', blank=True)
 
 
     def __str__(self):

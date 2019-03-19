@@ -4,8 +4,9 @@
     "\\django_projects",
     "\\django_projects\\pineappleexpress",
     "\\django_projects\\pineappleexpress\\pineapple",
-    "\\django_projects\\pineappleexpress\\pineappleexpress"
+    "\\django_projects\\pineappleexpress\\pineappleexpress",
+    "\\django_projects\\pineappleexpress\\pineapple\\templates"
   ],
-  "SelectedNode": "\\django_projects\\pineappleexpress\\pineapple",
+  "SelectedNode": "\\django_projects\\pineappleexpress\\pineapple\\models.py",
   "PreviewInSolutionExplorer": false
 }
